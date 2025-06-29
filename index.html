@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <link rel="stylesheet" href="src/output.css">
+
+</head>
+
+<body class="font-Inter grid place-content-center md:p-4 md:relative transition-colors duration-500">
+  <div class="bg-Very-Pale-Blue-Top-BG-Pattern absolute z-0 w-full h-[180px] transition-colors duration-500" id="bgpattern"></div>
+
+  <section class="w-[304px] md:w-[1200px]  z-10 ">
+    
+        <!-- Title -->
+        <div class="mb-4 md:flex md:justify-between ">
+            <div class="md:flex md:flex-col">
+              <h1 class="text-Very-Dark-Blue-Text font-bold md:text-2xl" id="Title">Social Media Dashboard</h1>
+              <p class="text-Dark-Grayish-Blue-Text" id="subTittle">Total Followers: 23,004</p>
+            </div>
+          
+
+          <hr class="mb-4 md:hidden">
+        <!-- Toggle button -->
+        <div class="flex justify-between mb-4 md:flex md:gap-3 md:items-center">
+            <p class="text-Dark-Grayish-Blue-Text font-medium" id="darkModeT">Dark Mode</p>
+            <label id="label" class="bg-Toggle w-10 h-5 rounded-full relative cursor-pointer inline-block">
+                <input type="checkbox" class="sr-only peer" id="toggle">
+                <span class="absolute bg-White-BG rounded-full w-2/5 h-4/5 left-1 top-0.5 peer-checked:bg-Very-Dark-Blue-BG peer-checked:left-5 transition-all duration-300"></span>
+            </label>
+
+            </div>
+        </div>
+
+        
+    
+
+      <!-- Cards -->
+
+      <!-- Facebook -->
+       <div class="md:grid md:grid-cols-4 md:gap-6 ">
+          <div class="flex flex-col gap-4 mb-4 items-center bg-Light-Grayish-Blue-Card-BG transition-colors duration-500 px-4 py-6 relative rounded-md text-Base text-Very-Dark-Blue-Text" id="cards">
+
+            <div class="absolute bg-Facebook rounded-t-md p-0.5 top-0 w-full"></div>
+
+              <div  class="flex gap-2 items-center">
+                <img class="size-4" src="./images/icon-facebook.svg" alt="">
+                <p class="font-medium text-Very-Dark-Blue-Text" id="user">@nathanf</p>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="text-5xl font-bold" id="total">1987</p>
+                <p class="uppercase font-light tracking-[3px] text-center text-Very-Dark-Blue-Text" id="followers">Followers</p>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/icon-up.svg" alt="">
+                <p class="text-Lime-Green font-medium">12 Today</p>
+              </div>
+          </div>
+          <!-- Twitter -->
+          <div class="flex flex-col gap-4 mb-4 items-center bg-Light-Grayish-Blue-Card-BG transition-colors duration-500 px-4 py-6 relative rounded-md text-Base " id="cards">
+
+            <div class="absolute bg-Twitter rounded-t-md p-0.5 top-0 w-full"></div>
+
+              <div class="flex gap-2 items-center">
+                <img class="size-4" src="./images/icon-twitter.svg" alt="">
+                <p class="font-medium text-Very-Dark-Blue-Text" id="user">@nathanf</p>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="text-5xl font-bold text-Very-Dark-Blue-Text" id="total">1044</p>
+                <p class="uppercase font-light tracking-[3px] text-center text-Very-Dark-Blue-Text" id="followers">Followers</p>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/icon-up.svg" alt="">
+                <p class="text-Lime-Green font-medium">99 Today</p>
+              </div>
+            
+          </div>
+          <!-- Instagram -->
+          <div class="flex flex-col gap-4 mb-4 items-center bg-Light-Grayish-Blue-Card-BG transition-colors duration-500 px-4 py-6 relative rounded-md text-Base " id="cards">
+
+            <div class="absolute bg-linear-to-r from-InstagramFrom to-InstagramTo rounded-t-md p-0.5 top-0 w-full"></div>
+
+              <div class="flex gap-2 items-center">
+                <img class="size-4" src="./images/icon-instagram.svg" alt="">
+                <p class="font-medium text-Very-Dark-Blue-Text" id="user">@realnathanf</p>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="text-5xl font-bold text-center text-Very-Dark-Blue-Text" id="total">11k</p>
+                <p class="uppercase font-light tracking-[3px] text-Very-Dark-Blue-Text" id="followers">Followers</p>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/icon-up.svg" alt="">
+                <p class="text-Lime-Green font-medium">1099 Today</p>
+              </div>
+
+          </div>
+          <!-- Youtube -->
+          <div class="flex flex-col gap-4 mb-4 items-center bg-Light-Grayish-Blue-Card-BG transition-colors duration-500 px-4 py-6 relative rounded-md text-Base " id="cards">
+              <div class="absolute bg-YouTube rounded-t-md p-0.5 top-0 w-full"></div>
+
+              <div class="flex gap-2 items-center">
+                <img class="size-4" src="./images/icon-youtube.svg" alt="">
+                <p class="font-medium text-Very-Dark-Blue-Text" id="user">Nathan F.</p>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="text-5xl font-bold text-Very-Dark-Blue-Text" id="total">8239</p>
+                <p class="uppercase font-light tracking-[3px] text-Very-Dark-Blue-Text" id="followers">Subscribers</p>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <img src="./images/icon-down.svg" alt="">
+                <p class="text-Bright-Red font-medium">144 Today</p>
+              </div>
+              
+          </div>
+      </div>
+
+       <h2 class="text-Dark-Grayish-Blue-Text text-xl font-bold mb-4">Overview - Today</h2>
+
+       <!-- Cards -->
+      <div class="md:grid md:grid-cols-4 md:gap-6 ">
+            <div class="bg-Light-Grayish-Blue-Card-BG p-4 mb-4 rounded-md text-Base transition-colors duration-500" id="cardToday">
+                <div class = "flex justify-between mb-4">
+                  <p class="text-Dark-Grayish-Blue-Text font-bold" id="interaction">Page Views</p>
+                  <img class="size-4" src="./images/icon-facebook.svg" alt="">
+                </div>
+
+                <div class="flex justify-between">
+                  <p class ="text-2xl font-bold text-Very-Dark-Blue-Text" id="total">87</p>
+
+                  <div class="flex gap-1 items-center" >
+                    <img src="./images/icon-up.svg" alt="">
+                    <p class="text-Lime-Green font-medium text-[12px]">3%</p>
+                  </div>
+                  
+                </div>
+                
+            </div>
+
+            <div class="bg-Light-Grayish-Blue-Card-BG p-4 mb-4 rounded-md text-Base transition-colors duration-500" id="cardToday">
+              
+                <div class = "flex justify-between mb-4">
+                  <p  class="text-Dark-Grayish-Blue-Text font-bold" id="interaction">Likes</p>
+                  <img class="size-4" src="./images/icon-facebook.svg" alt="">
+                </div>
+
+                <div class = "flex justify-between">
+                  <p class ="text-2xl font-bold text-Very-Dark-Blue-Text" id="total">52</p>
+                  <div class = "flex gap-1 items-center">
+                    <img src="./images/icon-down.svg" alt="">
+                    <p class="text-Bright-Red font-medium text-[12px]">2%</p>
+                  </div>
+                  
+                </div>
+            </div>
+
+            <div class="bg-Light-Grayish-Blue-Card-BG p-4 mb-4 rounded-md text-Base transition-colors duration-500" id="cardToday">
+                <div class = "flex justify-between mb-4">
+                  <p class="text-Dark-Grayish-Blue-Text font-bold" id="interaction">Likes</p>
+                  <img class="size-4" src="./images/icon-instagram.svg" alt="">
+                </div>
+
+                <div class="flex justify-between">
+                  <p class ="text-2xl font-bold text-Very-Dark-Blue-Text" id="total">5462</p>
+                  <div class = "flex gap-1 items-center">
+                    <img src="./images/icon-up.svg" alt="">
+                    <p class="text-Lime-Green font-medium text-[12px]">2257%</p>
+                  </div>
+                  
+                </div>
+            </div>
+
+            <div class="bg-Light-Grayish-Blue-Card-BG p-4 mb-4 rounded-md text-Base transition-colors duration-500" id="cardToday">
+                <div class = "flex justify-between mb-4">
+                  <p class="text-Dark-Grayish-Blue-Text font-bold" id="interaction">Profile Views</p>
+                  <img class="size-4" src="./images/icon-instagram.svg" alt="">
+                </div>
+                <div class="flex justify-between">
+                  <p class ="text-2xl text-Very-Dark-Blue-Text font-bold" id="total">52k</p>
+                  <div class = "flex gap-1 items-center">
+                    <img src="./images/icon-up.svg" alt="">
+                    <p class="text-Bright-Red font-medium text-[12px]">1375%</p>
+                  </div>
+                  
+                </div>
+            </div>
+
+            <div class="bg-Light-Grayish-Blue-Card-BG p-4 mb-4 rounded-md text-Base transition-colors duration-500" id="cardToday">
+                <div class = "flex justify-between mb-4">
+                  <p class="text-Dark-Grayish-Blue-Text font-bold" id="interaction">Retweets</p>
+                  <img class="size-4" src="./images/icon-twitter.svg" alt="">
+                </div>
+
+                <div class = "flex justify-between">
+                  <p class ="text-2xl font-bold text-Very-Dark-Blue-Text" id="total">117</p>
+                  <div class = "flex gap-1 items-center ">
+                    <img src="./images/icon-up.svg" alt="">
+                    <p class="text-Lime-Green font-medium text-[12px]">303%</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="bg-Light-Grayish-Blue-Card-BG p-4 mb-4 rounded-md text-Base transition-colors duration-500" id="cardToday">
+                <div class = "flex justify-between mb-4">
+                  <p class="text-Dark-Grayish-Blue-Text font-bold" id="interaction">Likes</p>
+                  <img class="size-4" src="./images/icon-twitter.svg" alt="">
+                </div>
+
+                <div class = "flex justify-between ">
+                  <p class ="text-2xl font-bold text-Very-Dark-Blue-Text" id="total">507</p>
+                  <div class = "flex gap-1 items-center">
+                    <img src="./images/icon-up.svg" alt="">
+                    <p class="text-Lime-Green font-medium text-[12px]" >553%</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="bg-Light-Grayish-Blue-Card-BG p-4 mb-4 rounded-md text-Base transition-colors duration-500" id="cardToday">
+                <div class = "flex justify-between mb-4">
+                  <p class="text-Dark-Grayish-Blue-Text font-bold" id="interaction">Likes</p>
+                  <img class="size-4" src="./images/icon-youtube.svg" alt="">
+                </div>
+                <div class = "flex justify-between">
+                  <p class ="text-2xl font-bold text-Very-Dark-Blue-Text" id="total">107</p>
+                  <div class = "flex gap-1 items-center">
+                    <img src="./images/icon-down.svg" alt="">
+                    <p class="text-Bright-Red font-medium text-[12px]">19%</p>
+                  </div>
+                  
+                </div>
+            </div>
+
+            <div class="bg-Light-Grayish-Blue-Card-BG p-4 mb-4 rounded-md text-Base transition-colors duration-500" id="cardToday">
+                <div class = "flex justify-between mb-4">
+                  <p class="text-Dark-Grayish-Blue-Text font-bold" id="interaction">Total Views</p>
+                  <img class="size-4" src="./images/icon-youtube.svg" alt="">
+
+                </div>
+
+                <div class = "flex justify-between">
+                  <p class ="text-2xl font-bold text-Very-Dark-Blue-Text" id="total">1407</p>
+                  <div class = "flex gap-1 items-center">
+                    <img src="./images/icon-down.svg" alt="">
+                    <p class="text-Bright-Red font-medium text-[12px]">12%</p>
+                  </div>
+                  
+                </div>
+            </div>
+      </div>
+
+    
+
+  </section>
+  <script src="app.js"></script>
+</body>
+
+</html>
